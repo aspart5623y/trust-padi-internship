@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Mart UI</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="./vendor//bootstrap/css/bootstrap.min.css">
+    <!-- Font awesome CSS link -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 14px;
+            /* font-family: normal normal medium Montserrat !important; */
+        }
+
+        .btn, .form-control{
+            border-radius: 8px;
+            box-shadow: none !important;
+        }
+
+        .btn-primary{
+            background-color: #4468E2 !important;
+        }
+        .btn-primary:hover{
+            background-color: #4062d4 !important;
+        }
+        .btn-light{
+            background-color: #4169e227 !important;
+            color: #4169e288;
+        }
+        .btn-light:hover{
+            background-color: #4169e238 !important;
+            color: #4169e29c;
+        }
+
+
+        /************************************
+        *         N  A  V  B  A  R         *
+        ************************************/
+        .navbar .nav-link{
+            color: black !important;
+            padding: 5px 35px 3px 0 !important;
+            font-weight: 600;
+            transition: .3s ease-in-out;
+        }
+
+        .navbar .nav-link.active, .navbar .nav-link:hover {
+            color: #4169E2 !important;
+        }
+
+        .navbar .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 20px;
+            padding: 2px;
+            border-bottom: 1px solid #4169E2;
+        }
+
+
+        section.faq{
+            margin: 60px 0;
+        }
+        section.faq .nav .nav-link.active{
+            background: #4169e21c 0% 0% no-repeat padding-box;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            height: 104px;
+            letter-spacing: 1px;
+            color: #4169E2;
+            opacity: 1;
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 40px 0px;
+        }
+
+        section.faq .nav .nav-link {
+            border: 1px solid #555555;
+            border-radius: 10px;
+            width: 100%;
+            height: 104px;
+            letter-spacing: 1px;
+            color: #555555;
+            opacity: 0.5;
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 40px 0px;
+        }
+    </style>
+
+    <!-- jQuery link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- popper js link -->
+    <script src="./vendor/popper.js/umd/popper.min.js"></script>
+    <!-- bootstrap JS link -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- script.js link -->
+    <script src="./js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 
+        ************************************
+        *         N  A  V  B  A  R         *
+        ************************************
+     -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- navbar brand -->
+            <a href="#" class="navbar-brand">
+                <img src="./assets/logo/favicon.ico" alt="" width="40px" class="img-fluid">
+            </a>  
+
+            <!-- navbar toggler button -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+                <!-- navbar toggler icon -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- collapsed navbar -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">FAQ</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- dropdown button -->
+                <div class="btn-group">
+                    <!-- button -->
+                    <button class="btn btn-primary dropdown-toggle px-4 py-3" data-toggle="dropdown">Get started</button>
+                    <!-- dropdown menu -->
+                    <div class="dropdown-menu border-0 shadow">
+                        <a href="#" class="dropdown-item py-2">Link 1</a>
+                        <a href="#" class="dropdown-item py-2">Link 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+ 
+
+
+
+    <!-- 
+        ************************************
+        *        F      A       Q         *
+        ************************************
+    -->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5 my-3">
+                    <!-- nav tab -->
+                    <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                        <!-- nav-link -->
+                        <a class="nav-link active" data-toggle="pill" href="#question-1">What is Escrow?</a>
+                         <!-- nav-link -->
+                        <a class="nav-link" data-toggle="pill" href="#question-2">What is Escrow 2?</a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7 my-3">
+                    <!-- teb content -->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade show active" id="question-1" role="tabpanel">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                        </div>
+
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade" id="question-2" role="tabpanel"> 
+                            <b>number 2</b> <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus impedit quaerat sit, animi cupiditate natus dolor, saepe, ipsa asperiores laudantium nisi repellendus ea quia est blanditiis. Dolore, doloremque consequuntur!
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            
+          
+            
+
+            <div class="row justify-content-end">
+                <div class="col-lg-6 col-sm-7">
+                    <form>
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="Ask a question..." rows="2"></textarea>
+                            <div class="input-group-append">
+                                <div class="px-2">
+                                    <button type="button" style="width: 42px;" class="btn my-1 btn-light">
+                                        <i class="fas fa-camera" style="font-size: 20px;"></i>
+                                    </button>
+
+                                    <br>
+
+                                    <button type="button" style="width: 42px;" class="btn my-1 btn-primary">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+</body>
+</html>
