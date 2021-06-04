@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Mart UI</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="./vendor//bootstrap/css/bootstrap.min.css">
+    <!-- Font awesome CSS link -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 14px;
+            outline: none !important;
+            /* font-family: normal normal medium Montserrat !important; */
+        } 
+        .text-primary{
+            color: #210070 !important;
+        }
+        
+        .text-success{
+            color: #02BC77 !important;
+        }
+
+        .text-gold{
+            color: #f49f1c !important;
+        }
+
+        .btn, .form-control{
+            border-radius: 8px;
+            box-shadow: none !important;
+        }
+
+        .btn-primary{
+            background-color: #4468E2 !important;
+        }
+        .btn-primary:hover{
+            background-color: #4062d4 !important;
+        }
+
+        .btn-success{
+            background-color: #02BC77 !important;
+            border-color: #02BC77;
+        }
+        .btn-success:hover{
+            background-color: #05a369 !important;
+            border-color: #05a369 !important;
+        }
+
+        .btn-light{
+            background-color: #4169e227 !important;
+            color: #4169e288;
+        }
+        .btn-light:hover{   
+            background-color: #4169e238 !important;
+            color: #4169e29c;
+        }
+
+        .btn-gold{
+            background-color: #FEBA4F !important;
+            color: white;
+        }
+        .btn-gold:hover{   
+            background-color: #ebab43 !important;
+            color: white;
+        }
+
+
+
+        /************************************
+        *         N  A  V  B  A  R         *
+        ************************************/
+        .navbar .nav-link{
+            color: black !important;
+            padding: 5px 35px 3px 0 !important;
+            font-weight: 600;
+            transition: .3s ease-in-out;
+        }
+
+        .navbar .nav-link.active, .navbar .nav-link:hover {
+            color: #4169E2 !important;
+        }
+
+        .navbar .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 20px;
+            padding: 2px;
+            border-bottom: 1px solid #4169E2;
+        }
+
+
+        section{
+            margin: 60px 0;
+        }
+
+        .rounded {
+            border-radius: 20px !important;
+        }
+        .alert-success {
+            background-color: #02bc781c !important;
+        }
+
+        .alert-primary {
+            background-color: #4169e223 !important;
+        }
+
+        .alert-success h5{
+            color: #02BC77 !important;
+        }    
+
+        .alert-gold {
+            background-color: #febb4f27 !important;
+        }
+        .alert-gold h5{
+            color: #FEBA4F !important;
+        } 
+
+    </style>
+
+    <!-- jQuery link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- popper js link -->
+    <script src="./vendor/popper.js/umd/popper.min.js"></script>
+    <!-- bootstrap JS link -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- script.js link -->
+    <script src="./js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 
+        ************************************
+        *         N  A  V  B  A  R         *
+        ************************************
+     -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- navbar brand -->
+            <a href="#" class="navbar-brand">
+                <img src="./assets/logo/favicon.ico" alt="" width="40px" class="img-fluid">
+            </a>  
+
+            <!-- navbar toggler button -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+                <!-- navbar toggler icon -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- collapsed navbar -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">FAQ</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+
+                    <!-- nav links -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+
+                <!-- dropdown button -->
+                <div class="btn-group">
+                    <!-- button -->
+                    <button class="btn btn-primary dropdown-toggle px-4 py-3" data-toggle="dropdown">Get started</button>
+                    <!-- dropdown menu -->
+                    <div class="dropdown-menu border-0 shadow">
+                        <a href="#" class="dropdown-item py-2">Link 1</a>
+                        <a href="#" class="dropdown-item py-2">Link 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+ 
+
+
+
+    <!-- 
+        ************************************
+        *        D A S H B O A R D         *
+        ************************************
+    -->
+    <section class="dashboard">
+        <div class="container">
+            
+            <!-- column -->
+            <div class="col-lg-7">
+
+                <!-- card one -->
+                <div class="card border-0 mb-4 rounded alert-success">
+                    <!-- card body -->
+                    <div class="card-body py-5 px-4">
+                        <!-- card title -->
+                        <h5 class="font-weight-bold mb-3">Current balance</h5>
+
+                        <!-- row one on this card -->
+                        <div class="row">
+                            <!-- card text -->
+                            <div class="col-lg-7">
+                                <p class="text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti nisi nemo adipisc
+                                </p>
+                            </div>
+
+                            <!-- card chart -->
+                            <div class="col-lg-5">
+                                chart
+                            </div>
+                        </div>
+
+                        <!-- row two on this card -->
+                        <div class="row">
+                            <!-- card amt -->
+                            <div class="col-lg-7">
+                                <h1 class="text-dark">
+                                    $50,000.00
+                                </h1>
+                            </div>
+
+                            <!-- card button -->
+                            <div class="col-lg-5">
+                                <button class="btn btn-success w-100 py-3">See history</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- card two -->
+                <div class="card border-0 mb-4 rounded alert-primary">
+                    <!-- card body -->
+                    <div class="card-body py-5 px-4">
+                        <!-- card title -->
+                        <h5 class="font-weight-bold mb-3">Trust balance</h5>
+
+                        <!-- row one on this card -->
+                        <div class="row">
+                            <!-- card text -->
+                            <div class="col-lg-7">
+                                <p class="text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti nisi nemo adipisc
+                                </p>
+                            </div>
+
+                            <!-- card chart -->
+                            <div class="col-lg-5">
+                                chart
+                            </div>
+                        </div>
+
+                        <!-- row two on this card -->
+                        <div class="row">
+                            <!-- card amt -->
+                            <div class="col-lg-7">
+                                <h1 class="text-dark">
+                                    $50,000.00
+                                </h1>
+                            </div>
+
+                            <!-- card button -->
+                            <div class="col-lg-5">
+                                <button class="btn btn-primary w-100 py-3">See history</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- card three -->
+                <div class="card border-0 mb-4 rounded alert-gold">
+                    <!-- card body -->
+                    <div class="card-body py-5 px-4">
+                        <!-- card title -->
+                        <h5 class="font-weight-bold mb-3">Withdrawal balance</h5>
+
+                        <!-- row one on this card -->
+                        <div class="row">
+                            <!-- card text -->
+                            <div class="col-lg-7">
+                                <p class="text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti nisi nemo adipisc
+                                </p>
+                            </div>
+
+                            <!-- card chart -->
+                            <div class="col-lg-5">
+                                chart
+                            </div>
+                        </div>
+
+                        <!-- row two on this card -->
+                        <div class="row">
+                            <!-- card amt -->
+                            <div class="col-lg-7">
+                                <h1 class="text-dark">
+                                    $50,000.00
+                                </h1>
+                            </div>
+
+                            <!-- card button -->
+                            <div class="col-lg-5">
+                                <button class="btn btn-gold w-100 py-3">See history</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
